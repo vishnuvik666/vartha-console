@@ -25,9 +25,9 @@ export default function HomeNewsCard({
           </div>
         </div>
       </div>
-      {[1, 2]?.map((val) => {
+      {[1, 2]?.map((val, index) => {
         return (
-          <div className={styles.singleNewsWrapper}>
+          <div key={index.toString()} className={styles.singleNewsWrapper}>
             <div className={styles.singleNewTopOptionWrapper}>
               <div className={styles.singleNewHeading}>
                 <p className={styles.newsText}>Weather,Rain,Flood</p>
@@ -76,9 +76,12 @@ export default function HomeNewsCard({
             </div>
             <div className={styles.timelineWrapper}>
               <p className={styles.optionText}>Timeline ( 2 )</p>
-              {[1, 2, 3]?.map((val) => {
+              {[1, 2, 3]?.map((val, index) => {
                 return (
-                  <div className={styles.timeLineNewsWrapper}>
+                  <div
+                    key={index.toString()}
+                    className={styles.timeLineNewsWrapper}
+                  >
                     <div className={styles.timelineCount}></div>
                     <div className={styles.timelineimageWrapper}>
                       {/* <img src="https://via.placeholder.com/100" /> */}
