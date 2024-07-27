@@ -1,0 +1,68 @@
+.multiSelectContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.selectedOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.selectedOption {
+  background-color: #a868e4;
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.removeIcon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.inputField {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.gridOption {
+  padding: 10px;
+  background-color: #eceff5;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.gridOption:hover {
+  background-color: #e0e0e0;
+}
+.closeBtn {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 41px;
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: #9b51e0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}

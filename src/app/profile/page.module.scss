@@ -1,0 +1,505 @@
+/* pages/page.module.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px; /* Adjust margin to accommodate the fixed sidenav */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+.nameLink {
+  font-size: 24px;
+  font-weight: 400;
+}
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+}
+.home {
+  padding: 30px;
+  background-color: #fff;
+  border-width: 0px;
+  border: 0px solid;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.mainListWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 3px;
+}
+.listTop {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin: 2px;
+  align-items: center;
+}
+.toBePublishedText {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.singleNewsWrapper {
+  border-width: 1px;
+  border: 1px solid;
+  margin-top: 10px;
+  padding: 8px;
+  border-color: #d9d9d9;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.singleNewTopOptionWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  align-items: center;
+  display: flex;
+  flex: 0.5;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.singleNewHeading {
+  border-width: 0px;
+  border: 0px solid;
+  width: 30%;
+}
+.newsText {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #30569a;
+}
+.newsMainOptions {
+  border-width: 0px;
+  border: 0px solid;
+  width: 70%;
+  align-items: center;
+  display: flex;
+  flex: 0.3;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.publishBtn {
+  border-width: 0px;
+  border: 0px solid;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #9b51e0;
+}
+.optionText {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.publishText {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.otherBtn {
+  border-width: 0px;
+  border: 0px solid;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+  gap: 10px;
+}
+.newsMatterWrap {
+  border-width: 0px;
+  border: 0px solid;
+  padding: 2px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageWrapper {
+  border-width: 0px;
+  border: 0px solid;
+}
+.image {
+  border-width: 1px;
+  border: 1px solid;
+  width: 190px;
+  height: 140px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newContentWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex: 0.98;
+}
+.newContentText {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.timelineWrapper {
+  border-width: 0px;
+  border: 0px solid;
+}
+.timeLineNewsWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  margin-top: 3px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+}
+.timelineCount {
+  border-width: 0px;
+  border: 0px solid;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #9b51e0;
+}
+.timelineimageWrapper {
+  border-width: 1px;
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeLinenewContentText {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.timeLinenewContentWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex: 0.98;
+  margin-left: 10px;
+}
+.newsFooter {
+  border-width: 0px;
+  border: 0px solid;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 7px;
+}
+.footerText {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #a6a6a6;
+}
+.calendarBtn {
+  border-width: 1px;
+  border: 0.6px solid;
+  // width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 6px;
+  border-color: #838282;
+  background-color: #fff;
+}
+.createNewBtnWrapper {
+  border: 0px solid;
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.createNewsBtn {
+  border-width: 1px;
+  border: 0px solid;
+  width: 172px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 6px;
+  background-color: #9b51e0;
+  cursor: pointer;
+}
+.createNewsText {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.topPartWrap {
+  border: 0px solid;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.profilePicWrap {
+  width: 200px;
+  height: 255px;
+  border: 0px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileDataWrap {
+  border: 0px solid;
+  display: flex;
+  flex: 0.95;
+  padding: 10px;
+  flex-direction: column;
+}
+.userNameText {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.roleMailWrapper {
+  border: 0px solid;
+  display: flex;
+  flex: 0.95;
+  margin-top: 0px;
+}
+.roleWrap {
+  border: 0px solid;
+  display: flex;
+  flex: 0.2;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.roleIconWrap {
+  height: 26px;
+  width: 26px;
+  border-radius: 26px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roleMailText {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #9da6ba;
+  margin-left: 10px;
+}
+.newsDetailsWrap {
+  border: 1px dotted;
+  width: 240px;
+  height: 110px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.newsDetailsWrapPending {
+  border: 1px dotted;
+  width: 240px;
+  height: 110px;
+  border-radius: 6px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.countText {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.labelText {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #30569a;
+}
+.profileDetailsText {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.profilePicProfileWrap {
+  width: 200px;
+  height: 255px;
+  border: 0px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+.bottomPartWrap {
+  border: 0px solid;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+.bottomLabelText {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.inputWrap {
+  border: 0px solid;
+  display: flex;
+  padding: 10px;
+  margin-left: 80px;
+}
+.formContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.label {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.input {
+  padding: 5px;
+  width: 450px;
+  height: 55px;
+  border-radius: 6px;
+  background-color: #ededed;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  border-color: #ededed;
+  border: 0px solid;
+}
+.emaillabel {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.phonelabel {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.emailinput {
+  padding: 5px;
+  width: 915px;
+  height: 55px;
+  border-radius: 6px;
+  background-color: #ededed;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  border-color: #ededed;
+  border: 0px solid;
+}
+.phoneinput {
+  padding: 5px;
+  width: 915px;
+  height: 55px;
+  border-radius: 6px;
+  background-color: #ededed;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  border-color: #ededed;
+  border: 0px solid;
+}
+.btnWrapper {
+  border: 0px solid;
+  margin-top: 15px;
+  display: flex;
+  flex: 0.3;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 15px;
+}
+.discardBtn {
+  height: 53px;
+  width: 139px;
+  border-radius: 6px;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.submitBtn {
+  height: 53px;
+  width: 218px;
+  border-radius: 6px;
+  background-color: #9b51e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}

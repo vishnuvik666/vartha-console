@@ -1,0 +1,65 @@
+/* components/SideNav.module.scss */
+
+.sidenav {
+  width: 300px;
+  background-color: #fff;
+  height: 100vh; /* Full height */
+  padding: 20px;
+  position: fixed; /* Fix it to the left side */
+  top: 0;
+  left: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  color: white;
+
+  h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navOption {
+  margin: 10px 0;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px;
+}
+
+.navOption:hover {
+  background-color: #f0f0f0; /* Optional hover effect */
+}
+
+.selected {
+  background-color: #9a51e0;
+  color: white;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit; /* Use the color of the parent element */
+  width: 100%; /* Make the link fill the entire navOption */
+  height: 100%; /* Ensure the link is the same height as navOption */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.nav {
+  margin-top: 20px;
+}

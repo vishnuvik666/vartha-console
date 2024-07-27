@@ -1,0 +1,53 @@
+.multiSelectContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.selectedOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.selectedOption {
+  background-color: #a868e4;
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.removeIcon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.inputField {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.dropdownOption {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownOption:hover {
+  background-color: #f0f0f0;
+}

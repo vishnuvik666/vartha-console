@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px; /* Adjust margin to accommodate the fixed sidenav */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.nameLink {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+}
+
+.home {
+  padding: 30px;
+  background-color: #fff;
+  border-width: 0px;
+  border: 0px solid;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.mainListWrapper {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3px;
+}
+
+.listTop {
+  border-width: 0px;
+  border: 0px solid;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 2px;
+  align-items: center;
+}
+
+.toBePublishedText {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.uploadImageWrapper {
+  border: 0px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.labelText {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainImageWrapper {
+  border: 0px solid;
+  width: 310px;
+  height: 500px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.margin10 {
+  margin-top: 40px;
+}
+
+.formWrapper {
+  width: 85%;
+  align-self: center;
+}
+
+.subImageWrapper {
+  border: 0px solid;
+  width: 380px;
+  height: 230px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.uploadText {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #838282;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+}
+
+.inputField,
+.textArea,
+.multiSelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+.textArea {
+  resize: vertical;
+  height: 250px;
+}
+
+.multiSelect {
+  height: 100px;
+}
+.timeLineWrapper {
+  border: 0px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.createlineWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.timelineText {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #a868e4;
+}
+.createTimelineText {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #838282;
+  margin-right: 10px;
+}
+.fullLengthButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #9b51e0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}

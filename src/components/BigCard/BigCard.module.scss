@@ -1,0 +1,11 @@
+.bigCard {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+}
