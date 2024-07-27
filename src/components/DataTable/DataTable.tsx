@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./DataTable.module.scss";
+import React, { useState } from 'react';
+import styles from './DataTable.module.scss';
 
 interface User {
   no: number;
@@ -21,8 +21,8 @@ const DataTable: React.FC<DataTableProps> = ({
   currentPage,
   itemsPerPage,
 }) => {
-  const [sortColumn, setSortColumn] = useState<keyof User>("no");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  const [sortColumn, setSortColumn] = useState<keyof User>('no');
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -30,9 +30,9 @@ const DataTable: React.FC<DataTableProps> = ({
   const sortData = (data: User[]) => {
     return [...data].sort((a, b) => {
       if (a[sortColumn] < b[sortColumn])
-        return sortDirection === "asc" ? -1 : 1;
+        return sortDirection === 'asc' ? -1 : 1;
       if (a[sortColumn] > b[sortColumn])
-        return sortDirection === "asc" ? 1 : -1;
+        return sortDirection === 'asc' ? 1 : -1;
       return 0;
     });
   };
@@ -41,7 +41,7 @@ const DataTable: React.FC<DataTableProps> = ({
 
   const handleSort = (column: keyof User) => {
     setSortDirection(
-      sortColumn === column && sortDirection === "asc" ? "desc" : "asc"
+      sortColumn === column && sortDirection === 'asc' ? 'desc' : 'asc'
     );
     setSortColumn(column);
   };
@@ -50,31 +50,31 @@ const DataTable: React.FC<DataTableProps> = ({
     <table className={styles.table}>
       <thead>
         <tr>
-          <th className={styles.th} onClick={() => handleSort("no")}>
-            No {sortColumn === "no" && (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('no')}>
+            No {sortColumn === 'no' && (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
-          <th className={styles.th} onClick={() => handleSort("firstName")}>
-            First Name{" "}
-            {sortColumn === "firstName" &&
-              (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('firstName')}>
+            First Name{' '}
+            {sortColumn === 'firstName' &&
+              (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
-          <th className={styles.th} onClick={() => handleSort("lastName")}>
-            Last Name{" "}
-            {sortColumn === "lastName" && (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('lastName')}>
+            Last Name{' '}
+            {sortColumn === 'lastName' && (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
-          <th className={styles.th} onClick={() => handleSort("phoneNumber")}>
-            Phone Number{" "}
-            {sortColumn === "phoneNumber" &&
-              (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('phoneNumber')}>
+            Phone Number{' '}
+            {sortColumn === 'phoneNumber' &&
+              (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
-          <th className={styles.th} onClick={() => handleSort("email")}>
-            Email{" "}
-            {sortColumn === "email" && (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('email')}>
+            Email{' '}
+            {sortColumn === 'email' && (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
-          <th className={styles.th} onClick={() => handleSort("interests")}>
-            Interests{" "}
-            {sortColumn === "interests" &&
-              (sortDirection === "asc" ? "▲" : "▼")}
+          <th className={styles.th} onClick={() => handleSort('interests')}>
+            Interests{' '}
+            {sortColumn === 'interests' &&
+              (sortDirection === 'asc' ? '▲' : '▼')}
           </th>
         </tr>
       </thead>
