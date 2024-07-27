@@ -1,10 +1,11 @@
-import React from "react";
-import styles from "../../page.module.scss";
-import { FaEdit } from "react-icons/fa";
-import { IoIosRemoveCircleOutline } from "react-icons/io";
-import { CiCalendar } from "react-icons/ci";
-import { FaRegNewspaper } from "react-icons/fa6";
-import Pagination from "@/components/Pagination/Pagination";
+import React from 'react';
+import styles from '../../page.module.scss';
+import { FaEdit } from 'react-icons/fa';
+import { IoIosRemoveCircleOutline } from 'react-icons/io';
+import { CiCalendar } from 'react-icons/ci';
+import { FaRegNewspaper } from 'react-icons/fa6';
+import Pagination from '@/components/Pagination/Pagination';
+import Image from 'next/image';
 
 export default function HomeNewsCard({ status }: any) {
   return (
@@ -46,7 +47,13 @@ export default function HomeNewsCard({ status }: any) {
             <div className={styles.newsMatterWrap}>
               <div className={styles.imageWrapper}>
                 <div className={styles.image}>
-                  <img src="https://via.placeholder.com/100" />
+                  {/* <img src="https://via.placeholder.com/100" /> */}
+                  <Image
+                    src="https://via.placeholder.com/100"
+                    alt="Placeholder image"
+                    width={100}
+                    height={100}
+                  />
                 </div>
               </div>
               <div className={styles.newContentWrapper}>
@@ -69,7 +76,13 @@ export default function HomeNewsCard({ status }: any) {
                   <div className={styles.timeLineNewsWrapper}>
                     <div className={styles.timelineCount}></div>
                     <div className={styles.timelineimageWrapper}>
-                      <img src="https://via.placeholder.com/100" />
+                      {/* <img src="https://via.placeholder.com/100" /> */}
+                      <Image
+                        src="https://via.placeholder.com/100"
+                        alt="Placeholder image"
+                        width={100}
+                        height={100}
+                      />
                     </div>
                     <div className={styles.timeLinenewContentWrapper}>
                       <p className={styles.timeLinenewContentText}>
