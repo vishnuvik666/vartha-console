@@ -1,51 +1,52 @@
 // pages/page.tsx
-"use client";
-import React, { useRef, useState } from "react";
-import Header from "../../components/Header/Header";
-import SideNav from "../../components/SideNav/SideNav";
-import MultiSelect from "./components/MultiSelect/MultiSelect";
-import styles from "./page.module.scss";
-import { GoPlus } from "react-icons/go";
-import ToggleButton from "./components/ToggleButton/ToggleButton";
-import { useRouter } from "next/navigation";
+'use client';
+import React, { useRef, useState } from 'react';
+import Header from '../../components/Header/Header';
+import SideNav from '../../components/SideNav/SideNav';
+import MultiSelect from './components/MultiSelect/MultiSelect';
+import styles from './page.module.scss';
+import { GoPlus } from 'react-icons/go';
+import ToggleButton from './components/ToggleButton/ToggleButton';
+import { useRouter } from 'next/navigation';
 
 const Page: React.FC = () => {
   const router = useRouter();
-  const [heading, setHeading] = useState("");
-  const [language, setLanguage] = useState("");
-  const [relatedNews, setRelatedNews] = useState("");
-  const [description, setDescription] = useState("");
+  const [heading, setHeading] = useState('');
+  const [language, setLanguage] = useState('');
+  const [relatedNews, setRelatedNews] = useState('');
+  const [description, setDescription] = useState('');
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [selectedTagOptions, setSelectedTagOptions] = useState<string[]>([]);
   const options = [
-    "World",
-    "Weather",
-    "Environment",
-    "Economy",
-    "Technology",
-    "Nature",
-    "Health",
-    "Science",
-    "Crime",
-    "Education",
-    "Law today ",
-    "Magazine",
+    'World',
+    'Weather',
+    'Environment',
+    'Economy',
+    'Technology',
+    'Nature',
+    'Health',
+    'Science',
+    'Crime',
+    'Education',
+    'Law today ',
+    'Magazine',
   ];
   const tagOptions = [
-    "World",
-    "Weather",
-    "Environment",
-    "Economy",
-    "Technology",
-    "Nature",
-    "Health",
-    "Science",
-    "Crime",
-    "Education",
-    "Law today ",
-    "Magazine",
+    'World',
+    'Weather',
+    'Environment',
+    'Economy',
+    'Technology',
+    'Nature',
+    'Health',
+    'Science',
+    'Crime',
+    'Education',
+    'Law today ',
+    'Magazine',
   ];
-  const fileInputRef = useRef(null);
+  //   const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleDivClick = () => {
     fileInputRef?.current?.click();
@@ -54,13 +55,13 @@ const Page: React.FC = () => {
   const handleFileChange = (event: any) => {
     const file = event.target.files[0];
     if (file) {
-      console.log("Selected file:", file);
+      console.log('Selected file:', file);
       // Handle the selected file here
     }
   };
 
   const onClickSubmit = () => {
-    router.push("/home");
+    router.push('/home');
   };
 
   return (
@@ -69,7 +70,7 @@ const Page: React.FC = () => {
       <SideNav />
       <div className={styles.content}>
         <main className={styles.mainContent}>
-          <p className={styles.nameLink}>{"Create News"}</p>
+          <p className={styles.nameLink}>{'Create News'}</p>
           <div className={styles.home}>
             <div className={styles.mainListWrapper}>
               <div className={styles.listTop}>
@@ -88,7 +89,7 @@ const Page: React.FC = () => {
                       type="file"
                       accept="image/*,video/*"
                       ref={fileInputRef}
-                      style={{ display: "none" }}
+                      style={{ display: 'none' }}
                       onChange={handleFileChange}
                     />
                   </div>
@@ -102,7 +103,7 @@ const Page: React.FC = () => {
                       type="file"
                       accept="image/*,video/*"
                       ref={fileInputRef}
-                      style={{ display: "none" }}
+                      style={{ display: 'none' }}
                       onChange={handleFileChange}
                     />
                   </div>
@@ -114,7 +115,7 @@ const Page: React.FC = () => {
                       type="file"
                       accept="image/*,video/*"
                       ref={fileInputRef}
-                      style={{ display: "none" }}
+                      style={{ display: 'none' }}
                       onChange={handleFileChange}
                     />
                   </div>
