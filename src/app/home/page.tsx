@@ -42,7 +42,7 @@ const Page: React.FC = () => {
     }
   };
 
-  const handleDeleteClick = (newsId) => {
+  const handleDeleteClick = (newsId: any) => {
     setSelectedNewsId(newsId);
     setShowModal(true);
   };
