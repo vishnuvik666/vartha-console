@@ -2,10 +2,10 @@
 import { useState } from "react";
 import styles from "./Pagination.module.scss";
 
-const Pagination = ({ totalPages }) => {
+const Pagination = ({ totalPages }: any) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageClick = (page) => {
+  const handlePageClick = (page: any) => {
     setCurrentPage(page);
   };
 

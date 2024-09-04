@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 interface Props {
   username?: string;
   userRole?: string;
-  onClickProfile: () => void;
+  onClickProfile?: () => void;
 }
 
 const Header: React.FC<Props> = ({

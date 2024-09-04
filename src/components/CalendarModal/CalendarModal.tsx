@@ -44,7 +44,7 @@ const CalendarModal = ({ isOpen, onClose }: any) => {
         <CloseButton onClick={onClose}>&times;</CloseButton>
         <DatePicker
           selected={selectedDate}
-          onChange={(date) => setSelectedDate(date)}
+          onChange={(date: any) => setSelectedDate(date)}
           inline
         />
       </ModalContainer>
