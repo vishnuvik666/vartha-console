@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import { FaBell } from 'react-icons/fa';
-import Image from 'next/image';
-import styles from './Header.module.scss'; // Ensure correct import path
-import UserPic from '../../../public/profile-pic.png';
-import { useRouter } from 'next/navigation';
+import React, { useState } from "react";
+import { FaBell } from "react-icons/fa";
+import Image from "next/image";
+import styles from "./Header.module.scss"; // Ensure correct import path
+import UserPic from "../../../public/profile-pic.png";
+import { useRouter } from "next/navigation";
 
 interface Props {
   username?: string;
   userRole?: string;
+  onClickProfile: () => void;
 }
 
 const Header: React.FC<Props> = ({
@@ -23,7 +24,7 @@ const Header: React.FC<Props> = ({
   };
 
   const onClickProfile = () => {
-    router.push('/profile');
+    router.push("/profile");
   };
 
   return (
@@ -35,8 +36,8 @@ const Header: React.FC<Props> = ({
         <FaBell className={styles.icon} />
         <div className={styles.profile} onClick={toggleDropdown}>
           <div className={styles.userInfo}>
-            <span className={styles.username}>{'Vishnu Vikram'}</span>
-            <span className={styles.userRole}>{'Editor'}</span>
+            <span className={styles.username}>{"Vishnu Vikram"}</span>
+            <span className={styles.userRole}>{"Editor"}</span>
           </div>
           <div className={styles.profilePic}>
             <Image
